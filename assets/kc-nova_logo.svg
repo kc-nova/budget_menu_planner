@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60" role="img" aria-label="kc-nova logo">
+  <defs>
+    <linearGradient id="grad-primary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1B4F8A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E6DB4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5A623;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F7BB54;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Icon: stylised star/nova burst -->
+  <g transform="translate(8, 8)">
+    <!-- Outer ring -->
+    <circle cx="22" cy="22" r="22" fill="url(#grad-primary)" />
+    <!-- Nova burst lines (accent) -->
+    <line x1="22" y1="4"  x2="22" y2="8"  stroke="#F5A623" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="22" y1="36" x2="22" y2="40" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="4"  y1="22" x2="8"  y2="22" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="36" y1="22" x2="40" y2="22" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="9"  y1="9"  x2="12" y2="12" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+    <line x1="32" y1="32" x2="35" y2="35" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+    <line x1="35" y1="9"  x2="32" y2="12" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+    <line x1="9"  y1="35" x2="12" y2="32" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+    <!-- Inner star -->
+    <circle cx="22" cy="22" r="7" fill="url(#grad-accent)" />
+    <circle cx="22" cy="22" r="3" fill="#FFFFFF" />
+  </g>
+
+  <!-- Wordmark: kc-nova -->
+  <text
+    x="62"
+    y="38"
+    font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+    font-size="26"
+    font-weight="700"
+    letter-spacing="-0.5"
+    fill="#1B4F8A"
+  >kc-<tspan fill="#F5A623">nova</tspan></text>
+</svg>

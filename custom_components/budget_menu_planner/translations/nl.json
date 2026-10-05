@@ -1,0 +1,35 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Budget Menu Planner instellen",
+        "description": "Configureer je maandbudget, voedingsdoel en Home Assistant entiteiten.\n**kc-nova** – slimme maaltijdplanning voor HA.",
+        "data": {
+          "monthly_budget": "Maandbudget (€)",
+          "nutrition_goal": "Voedingsdoel",
+          "todo_entity": "Todo entiteit (boodschappenlijst)",
+          "notify_service": "E-mail/Notificatieservice (bijv. notify.gmail)",
+          "promo_sensor": "Promo-sensor (optioneel)"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Budget Menu Planner is al geconfigureerd."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Budget Menu Planner – Instellingen aanpassen",
+        "description": "Pas je budget, voedingsdoel of entiteiten aan. Wijzigingen worden direct toegepast.",
+        "data": {
+          "monthly_budget": "Maandbudget (€)",
+          "nutrition_goal": "Voedingsdoel",
+          "todo_entity": "Todo entiteit",
+          "notify_service": "Notificatieservice",
+          "promo_sensor": "Promo-sensor (optioneel)"
+        }
+      }
+    }
+  }
+}

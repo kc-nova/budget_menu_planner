@@ -1,0 +1,13 @@
+{
+  "domain": "budget_menu_planner",
+  "name": "Budget Menu Planner",
+  "version": "1.0.0",
+  "documentation": "https://github.com/kc-nova/budget_menu_planner",
+  "issue_tracker": "https://github.com/kc-nova/budget_menu_planner/issues",
+  "codeowners": ["@kc-nova"],
+  "requirements": [],
+  "dependencies": [],
+  "config_flow": true,
+  "iot_class": "local_polling",
+  "quality_scale": "bronze"
+}

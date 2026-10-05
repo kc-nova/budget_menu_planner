@@ -1,0 +1,35 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up Budget Menu Planner",
+        "description": "Configure your monthly budget, nutrition goal, and Home Assistant entities.\n**kc-nova** – smart meal planning for HA.",
+        "data": {
+          "monthly_budget": "Monthly budget (€)",
+          "nutrition_goal": "Nutrition goal",
+          "todo_entity": "Todo entity (shopping list)",
+          "notify_service": "Email/Notify service (e.g. notify.gmail)",
+          "promo_sensor": "Promo sensor (optional)"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Budget Menu Planner is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Budget Menu Planner – Edit Settings",
+        "description": "Update your budget, nutrition goal, or entities. Changes take effect immediately.",
+        "data": {
+          "monthly_budget": "Monthly budget (€)",
+          "nutrition_goal": "Nutrition goal",
+          "todo_entity": "Todo entity",
+          "notify_service": "Notify service",
+          "promo_sensor": "Promo sensor (optional)"
+        }
+      }
+    }
+  }
+}

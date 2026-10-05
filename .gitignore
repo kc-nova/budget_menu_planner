@@ -1,0 +1,41 @@
+# Git ignore rules for budget_menu_planner
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+.env
+
+# Node / JS (API tooling)
+node_modules/
+npm-debug.log
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Home Assistant dev artifacts
+.storage/
+*.log
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/

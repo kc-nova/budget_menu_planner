@@ -1,0 +1,77 @@
+generate_month_menu:
+  name: Genereer maandmenu
+  description: >
+    Genereer een volledig 4-weken maaltijdplan op basis van budget en voedingsdoel.
+    Inspecteert optioneel de promo-sensor voor kortingsproducten.
+  fields:
+    monthly_budget:
+      name: Maandbudget
+      description: Maandelijks budget in euro (overschrijft de integratieinstelling).
+      required: false
+      advanced: false
+      example: 60
+      selector:
+        number:
+          min: 10
+          max: 500
+          step: 5
+          unit_of_measurement: "€/maand"
+    nutrition_goal:
+      name: Voedingsdoel
+      description: "weight_loss (caloriearmer) of maintenance (onderhoud)."
+      required: false
+      example: weight_loss
+      selector:
+        select:
+          options:
+            - weight_loss
+            - maintenance
+
+push_to_shopping_list:
+  name: Push boodschappenlijst naar Todo
+  description: >
+    Voegt de boodschappen van de opgegeven week toe aan de opgegeven
+    Home Assistant Todo-entiteit.
+  fields:
+    week_number:
+      name: Weeknummer (1–4)
+      description: Cyclisch weeknummer in het 4-wekenschema (standaard = huidige week).
+      required: false
+      example: 1
+      selector:
+        number:
+          min: 1
+          max: 4
+          step: 1
+    todo_entity:
+      name: Todo-entiteit
+      description: De HA Todo-entiteit waar de items naartoe worden gepusht.
+      required: false
+      example: todo.shopping_list
+      selector:
+        entity:
+          domain: todo
+
+send_weekly_email:
+  name: Verstuur wekelijks mailtje
+  description: >
+    Verstuurt een overzichtsmail met het weekmenu en de boodschappenlijst
+    via de opgegeven notificatieservice.
+  fields:
+    week_number:
+      name: Weeknummer (1–4)
+      description: Cyclisch weeknummer (standaard = huidige week).
+      required: false
+      example: 1
+      selector:
+        number:
+          min: 1
+          max: 4
+          step: 1
+    notify_service:
+      name: Notificatieservice
+      description: "HA-notificatieservice (bijv. notify.gmail)."
+      required: false
+      example: notify.gmail
+      selector:
+        text:

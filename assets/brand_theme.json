@@ -1,0 +1,145 @@
+{
+  "brand": "kc-nova",
+  "version": "1.0.0",
+  "description": "Official design tokens and theming specification for all kc-nova applications",
+
+  "colors": {
+    "primary": {
+      "default": "#1B4F8A",
+      "light": "#2E6DB4",
+      "dark": "#0D2E52",
+      "contrast_text": "#FFFFFF"
+    },
+    "secondary": {
+      "default": "#2C7A5E",
+      "light": "#3DA67E",
+      "dark": "#1A4D3A",
+      "contrast_text": "#FFFFFF"
+    },
+    "accent": {
+      "default": "#F5A623",
+      "light": "#F7BB54",
+      "dark": "#C47D08",
+      "contrast_text": "#0D1B2A"
+    },
+    "neutral": {
+      "50":  "#F8FAFC",
+      "100": "#F1F5F9",
+      "200": "#E2E8F0",
+      "300": "#CBD5E1",
+      "400": "#94A3B8",
+      "500": "#64748B",
+      "600": "#475569",
+      "700": "#334155",
+      "800": "#1E293B",
+      "900": "#0F172A"
+    },
+    "semantic": {
+      "success": "#22C55E",
+      "warning": "#F5A623",
+      "error":   "#EF4444",
+      "info":    "#3B82F6"
+    },
+    "dark_mode": {
+      "background":     "#0D1B2A",
+      "surface":        "#1A2D3D",
+      "surface_raised": "#243547",
+      "border":         "#2E4560",
+      "text_primary":   "#F1F5F9",
+      "text_secondary": "#94A3B8",
+      "text_disabled":  "#475569"
+    },
+    "light_mode": {
+      "background":     "#F8FAFC",
+      "surface":        "#FFFFFF",
+      "surface_raised": "#F1F5F9",
+      "border":         "#E2E8F0",
+      "text_primary":   "#0F172A",
+      "text_secondary": "#475569",
+      "text_disabled":  "#94A3B8"
+    }
+  },
+
+  "typography": {
+    "font_family": {
+      "sans": ["'Inter'", "'Segoe UI'", "system-ui", "sans-serif"],
+      "mono": ["'JetBrains Mono'", "'Fira Code'", "monospace"]
+    },
+    "font_size": {
+      "xs":   "0.75rem",
+      "sm":   "0.875rem",
+      "base": "1rem",
+      "lg":   "1.125rem",
+      "xl":   "1.25rem",
+      "2xl":  "1.5rem",
+      "3xl":  "1.875rem",
+      "4xl":  "2.25rem"
+    },
+    "font_weight": {
+      "regular":   400,
+      "medium":    500,
+      "semibold":  600,
+      "bold":      700,
+      "extrabold": 800
+    },
+    "line_height": {
+      "tight":  1.25,
+      "normal": 1.5,
+      "relaxed": 1.75
+    }
+  },
+
+  "spacing": {
+    "unit": "4px",
+    "scale": [0, 4, 8, 12, 16, 20, 24, 32, 40, 48, 64, 80, 96, 128]
+  },
+
+  "border_radius": {
+    "none": "0px",
+    "sm":   "4px",
+    "md":   "8px",
+    "lg":   "12px",
+    "xl":   "16px",
+    "full": "9999px"
+  },
+
+  "elevation": {
+    "none":   "none",
+    "sm":     "0 1px 2px rgba(0,0,0,0.08)",
+    "md":     "0 4px 12px rgba(0,0,0,0.12)",
+    "lg":     "0 8px 24px rgba(0,0,0,0.16)",
+    "xl":     "0 16px 48px rgba(0,0,0,0.20)"
+  },
+
+  "animation": {
+    "duration": {
+      "fast":   "100ms",
+      "normal": "200ms",
+      "slow":   "350ms"
+    },
+    "easing": {
+      "default":    "cubic-bezier(0.4, 0, 0.2, 1)",
+      "enter":      "cubic-bezier(0.0, 0, 0.2, 1)",
+      "exit":       "cubic-bezier(0.4, 0, 1, 1)"
+    }
+  },
+
+  "component_defaults": {
+    "button": {
+      "height": "40px",
+      "padding": "0 16px",
+      "border_radius": "8px",
+      "font_weight": 600
+    },
+    "input": {
+      "height": "40px",
+      "padding": "0 12px",
+      "border_radius": "8px",
+      "border_width": "1px"
+    },
+    "card": {
+      "padding": "20px",
+      "border_radius": "12px"
+    }
+  }
+}

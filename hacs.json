@@ -1,0 +1,10 @@
+{
+  "name": "Budget Menu Planner",
+  "domain": "budget_menu_planner",
+  "documentation": "https://github.com/kc-nova/budget_menu_planner",
+  "issue_tracker": "https://github.com/kc-nova/budget_menu_planner/issues",
+  "codeowners": ["@kc-nova"],
+  "render_readme": true,
+  "homeassistant": "2024.1.0",
+  "iot_class": "local_polling"
+}
